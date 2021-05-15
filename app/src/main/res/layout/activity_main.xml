@@ -9,37 +9,6 @@
     tools:visibility="visible">
 
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Logo"
-        app:layout_constraintVertical_bias="0.241" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/button1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button1"
-        app:layout_constraintTop_toTopOf="@+id/button1"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
-
     <ImageView
         android:id="@+id/Banner"
         android:layout_width="0dp"
@@ -70,5 +39,47 @@
         android:text="DevSlopes"
         app:layout_constraintStart_toEndOf="@+id/Logo"
         app:layout_constraintTop_toBottomOf="@+id/Banner" />
+
+    <ImageButton
+        android:id="@+id/imageButtoncamera"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="60dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonfavourite"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Devslope_Text"
+        app:srcCompat="@drawable/camerabutton" />
+
+    <ImageButton
+        android:id="@+id/imageButtonfavourite"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtoncamera"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtoninbox"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtoncamera"
+        app:layout_constraintTop_toTopOf="@+id/imageButtoncamera"
+        app:srcCompat="@drawable/favoritebutton" />
+
+    <ImageButton
+        android:id="@+id/imageButtoninbox"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonfavourite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonfavourite"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonfavourite"
+        app:srcCompat="@drawable/inboxbutton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
