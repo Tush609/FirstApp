@@ -42,7 +42,7 @@
 
     <ImageButton
         android:id="@+id/imageButtoncamera"
-        style="@android:style/Widget.DeviceDefault.ImageButton"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
         android:layout_width="63dp"
         android:layout_height="63dp"
         android:layout_marginTop="60dp"
@@ -56,7 +56,7 @@
 
     <ImageButton
         android:id="@+id/imageButtonfavourite"
-        style="@android:style/Widget.DeviceDefault.ImageButton"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
         android:layout_width="63dp"
         android:layout_height="63dp"
         android:layout_marginStart="30dp"
@@ -71,7 +71,7 @@
 
     <ImageButton
         android:id="@+id/imageButtoninbox"
-        style="@android:style/Widget.DeviceDefault.ImageButton"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
         android:layout_width="63dp"
         android:layout_height="63dp"
         android:visibility="visible"
@@ -81,5 +81,66 @@
         app:layout_constraintStart_toEndOf="@+id/imageButtonfavourite"
         app:layout_constraintTop_toTopOf="@+id/imageButtonfavourite"
         app:srcCompat="@drawable/inboxbutton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtoncamera"
+        app:srcCompat="@drawable/dataimage" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/imagesimage" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/videosimage" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.484"
+        app:srcCompat="@drawable/codeimage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
